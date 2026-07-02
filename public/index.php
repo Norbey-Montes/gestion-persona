@@ -1,15 +1,23 @@
 <?php
-// 1. Incluimos el archivo donde vive la clase
 include '../clase/persona.php';
 
-// 2. Creamos una instancia (objeto) de la clase Persona
+// --- Persona 1 ---
 $persona1 = new Persona();
-
-// 3. Asignamos los valores a los atributos
 $persona1->nombre = "Norbey";
-$persona1->edad = 20;
-$persona1->correo = "ejemplo@correo.com";
+$persona1->apellido = "Montes";
+$persona1->edad = "20";
+$persona1->correo = "norbey@correo.com";
 
-// 4. Imprimimos el resultado usando el método saludar
+// --- Persona 2 ---
+$persona2 = new Persona();
+$persona2->nombre = "Valentina";
+$persona2->apellido = "Ramírez";
+$persona2->edad = "19";
+$persona2->correo = "valentina@correo.com";
+
+// Imprimir (el formato viene desde la clase)
 echo $persona1->saludar();
+echo "<br>"; // Un pequeño espacio entre personas
+
+echo $persona2->saludar();
 ?>
