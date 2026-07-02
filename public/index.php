@@ -1,6 +1,6 @@
 <?php
 // 1. Incluimos el archivo donde vive la clase
-include 'clase/persona.php';
+include '../clase/persona.php';
 
 // 2. Creamos una instancia (objeto) de la clase Persona
 $persona1 = new Persona();
