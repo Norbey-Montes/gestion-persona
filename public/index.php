@@ -1,23 +1,14 @@
 <?php
 include '../clase/persona.php';
 
-// --- Persona 1 ---
-$persona1 = new Persona();
-$persona1->nombre = "Norbey";
-$persona1->apellido = "Montes";
-$persona1->edad = "20";
-$persona1->correo = "norbey@correo.com";
+// Pasamos los datos directamente en el paréntesis
+$persona1 = new Persona("Norbey", "Montes", "23", "norbey@correo.com");
 
-// --- Persona 2 ---
-$persona2 = new Persona();
-$persona2->nombre = "Valentina";
-$persona2->apellido = "Ramírez";
-$persona2->edad = "19";
-$persona2->correo = "valentina@correo.com";
+$persona2 = new Persona("Valentina", "Ramírez", "19", "valentina@correo.com");
 
-// Imprimir (el formato viene desde la clase)
+// Imprimir
 echo $persona1->saludar();
-echo "<br>"; // Un pequeño espacio entre personas
+echo "<br>"; 
 
 echo $persona2->saludar();
 ?>
