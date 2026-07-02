@@ -1,17 +1,13 @@
 <?php
-class persona
+class Persona
 {
-
     public $nombre;
     public $edad;
     public $correo;
 
     public function saludar()
     {
-        return "hola mi nombre es : ";
+        return "Hola, mi nombre es: " . $this->nombre;
     }
-
 }
-
-
 ?>
