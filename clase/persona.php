@@ -1,15 +1,15 @@
 <?php
 class Persona
 {
-    // 1. Cambiamos las propiedades de public a private
-    private $nombre;
-    private $apellido;
-    private $edad;
-    private $correo;
+    // Propiedades cambiadas de private a protected
+    protected $nombre;
+    protected $apellido;
+    protected $edad;
+    protected $correo;
 
     public function __construct($nombre, $apellido, $edad, $correo)
     {
-        // 2. Usamos los métodos set dentro del constructor para asegurar la validación inicial
+        // Usamos los métodos set dentro del constructor para asegurar la validación inicial
         $this->setNombre($nombre);
         $this->setApellido($apellido);
         $this->setEdad($edad);
@@ -36,7 +36,6 @@ class Persona
     }
 
     public function setCorreo($correo) {
-        // Puedes agregar validación de correo si lo deseas
         $this->correo = trim($correo);
     }
 
@@ -62,7 +61,6 @@ class Persona
 
     public function saludar()
     {
-        // 3. Usamos los métodos get para acceder a las propiedades privadas de manera segura
         return "Hola, Mi nombre es: " . $this->getNombre() . " " . $this->getApellido() . "<br>" .
                "Mi Edad es: " . $this->getEdad() . "<br>" .
                "Mi Correo es: " . $this->getCorreo() . "<br>";
