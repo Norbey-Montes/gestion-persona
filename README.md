@@ -1,2 +1,5 @@
 # Norbey Steep Montes Ramirez
 ## Durante esta sesión de formación, fortalecí mis competencias en control de versiones y desarrollo de software orientado a objetos. Iniciamos con la configuración técnica de un repositorio en GitHub, estableciendo una estructura de carpetas modular y aplicando flujos de trabajo de control de cambios mediante commits. Posteriormente, profundizamos en los fundamentos de la Programación Orientada a Objetos (POO), implementando clases, constructores, métodos y el manejo de herencia y polimorfismo, logrando una mayor cohesión y reutilización de código en mis aplicaciones.
+
+
+### Para solucionar el problema, entendí que al cambiar las propiedades de la clase padre (Persona) a private, estas se volvieron inaccesibles para mi clase hija (Estudiante), lo que generaba el aviso de propiedad no definida. Para solucionarlo, cambié el nivel de acceso en persona.php a protected (o bien implementé los métodos get en estudiante.php), permitiendo así que la clase hija heredara y accediera correctamente a los datos sin romper el encapsulamiento.
